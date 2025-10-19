@@ -16,5 +16,19 @@ namespace SuperheroApp
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtHeroId.Text) ||
+                string.IsNullOrWhiteSpace(txtName.Text) ||
+                string.IsNullOrWhiteSpace(txtAge.Text) ||
+                string.IsNullOrWhiteSpace(txtSuperpower.Text) ||
+                string.IsNullOrWhiteSpace(txtExamScore.Text))
+            {
+                MessageBox.Show("Please fill in all fields!", "Missing Information",
+                               MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+        }
     }
 }
