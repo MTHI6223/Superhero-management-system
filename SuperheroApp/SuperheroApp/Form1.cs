@@ -133,26 +133,37 @@ namespace SuperheroApp
         {
             try
             {
-                // Clear the current data grid
+                
                 dataGridViewHeroes.Rows.Clear();
 
                 // Check if file exists
                 if (!System.IO.File.Exists("superheroes.txt"))
                     return;
 
-                // Read all heroes from file
+                
                 string[] allHeroes = System.IO.File.ReadAllLines("superheroes.txt");
 
-                // Add each hero to the data grid
+              
                 foreach (string heroLine in allHeroes)
                 {
                     string[] heroData = heroLine.Split(',');
                     if (heroData.Length >= 7)
                     {
-                        dataGridViewHeroes.Rows.Add(heroData[0], heroData[1], heroData[2],
-                                                  heroData[3], heroData[4], heroData[5], heroData[6]);
+                        
+                        dataGridViewHeroes.Rows.Add(
+                            heroData[0], // Hero ID
+                            heroData[1], // Name
+                            heroData[2], // Age
+                            heroData[3], // Superpower
+                            heroData[4], // Exam Score
+                            heroData[5], // Rank
+                            heroData[6]  // Threat Level
+                        );
                     }
                 }
+
+                
+                dataGridViewHeroes.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
             }
             catch (Exception ex)
             {
