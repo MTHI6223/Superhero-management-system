@@ -297,5 +297,91 @@ namespace SuperheroApp
                 }
             }
         }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!System.IO.File.Exists("superheroes.txt"))
+                {
+                    MessageBox.Show("No superheroes found! Please add some heroes first.",
+                                   "No Data", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                string[] allHeroes = System.IO.File.ReadAllLines("superheroes.txt");
+
+                if (allHeroes.Length == 0)
+                {
+                    MessageBox.Show("No superheroes found! Please add some heroes first.",
+                                   "No Data", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+               
+                int totalHeroes = allHeroes.Length;
+                int totalAge = 0;
+                int totalScore = 0;
+                int sRankCount = 0, aRankCount = 0, bRankCount = 0, cRankCount = 0;
+
+                
+                foreach (string heroLine in allHeroes)
+                {
+                    string[] heroData = heroLine.Split(',');
+                    if (heroData.Length >= 7)
+                    {
+                       
+                        if (int.TryParse(heroData[2], out int age))
+                            totalAge += age;
+                        if (int.TryParse(heroData[4], out int score))
+                            totalScore += score;
+
+                       
+                        switch (heroData[5])
+                        {
+                            case "S-Rank": sRankCount++; break;
+                            case "A-Rank": aRankCount++; break;
+                            case "B-Rank": bRankCount++; break;
+                            case "C-Rank": cRankCount++; break;
+                        }
+                    }
+                }
+
+                
+                double avgAge = totalAge / (double)totalHeroes;
+                double avgScore = totalScore / (double)totalHeroes;
+
+                // Update the form labels
+                lblTotalHeroes.Text = totalHeroes.ToString();
+                lblAvgAge.Text = avgAge.ToString("0.00");
+                lblAvgScore.Text = avgScore.ToString("0.00");
+                lblSRank.Text = sRankCount.ToString();
+                lblARank.Text = aRankCount.ToString();
+                lblBRank.Text = bRankCount.ToString();
+                lblCRank.Text = cRankCount.ToString();
+
+                // Save summary to file
+                string summary = $"SUPERHERO SUMMARY REPORT\n" +
+                                $"Generated on: {DateTime.Now}\n" +
+                                $"Total Heroes: {totalHeroes}\n" +
+                                $"Average Age: {avgAge:0.00}\n" +
+                                $"Average Exam Score: {avgScore:0.00}\n" +
+                                $"Rank Distribution:\n" +
+                                $"  S-Rank: {sRankCount} heroes\n" +
+                                $"  A-Rank: {aRankCount} heroes\n" +
+                                $"  B-Rank: {bRankCount} heroes\n" +
+                                $"  C-Rank: {cRankCount} heroes";
+
+                System.IO.File.WriteAllText("summary.txt", summary);
+
+                MessageBox.Show("Report generated successfully!\nSaved to 'summary.txt'",
+                               "Report Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error generating report: {ex.Message}", "Error",
+                               MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
