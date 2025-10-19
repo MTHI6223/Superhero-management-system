@@ -64,6 +64,13 @@
             this.lblBRank = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.lblCRank = new System.Windows.Forms.Label();
+            this.colHeroId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAge = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSuperpower = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colExamScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colRank = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colThreatLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHeroes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -249,6 +256,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewHeroes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewHeroes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colHeroId,
+            this.colName,
+            this.colAge,
+            this.colSuperpower,
+            this.colExamScore,
+            this.colRank,
+            this.colThreatLevel});
             this.dataGridViewHeroes.Location = new System.Drawing.Point(50, 240);
             this.dataGridViewHeroes.Name = "dataGridViewHeroes";
             this.dataGridViewHeroes.Size = new System.Drawing.Size(800, 300);
@@ -407,6 +422,41 @@
             this.lblCRank.TabIndex = 35;
             this.lblCRank.Text = "0";
             // 
+            // colHeroId
+            // 
+            this.colHeroId.HeaderText = "Hero ID";
+            this.colHeroId.Name = "colHeroId";
+            // 
+            // colName
+            // 
+            this.colName.HeaderText = "Name";
+            this.colName.Name = "colName";
+            // 
+            // colAge
+            // 
+            this.colAge.HeaderText = "Age";
+            this.colAge.Name = "colAge";
+            // 
+            // colSuperpower
+            // 
+            this.colSuperpower.HeaderText = "Superpower";
+            this.colSuperpower.Name = "colSuperpower";
+            // 
+            // colExamScore
+            // 
+            this.colExamScore.HeaderText = "Exam Score";
+            this.colExamScore.Name = "colExamScore";
+            // 
+            // colRank
+            // 
+            this.colRank.HeaderText = "Rank";
+            this.colRank.Name = "colRank";
+            // 
+            // colThreatLevel
+            // 
+            this.colThreatLevel.HeaderText = "Threat Level";
+            this.colThreatLevel.Name = "colThreatLevel";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -495,6 +545,13 @@
         private System.Windows.Forms.Label lblBRank;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label lblCRank;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colHeroId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colAge;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSuperpower;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colExamScore;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colRank;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colThreatLevel;
     }
 }
 

@@ -383,5 +383,23 @@ namespace SuperheroApp
                                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+        private void dataGridViewHeroes_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) 
+            {
+                DataGridViewRow row = dataGridViewHeroes.Rows[e.RowIndex];
+
+                
+                txtHeroId.Text = row.Cells[0].Value?.ToString() ?? "";
+                txtName.Text = row.Cells[1].Value?.ToString() ?? "";
+                txtAge.Text = row.Cells[2].Value?.ToString() ?? "";
+                txtSuperpower.Text = row.Cells[3].Value?.ToString() ?? "";
+                txtExamScore.Text = row.Cells[4].Value?.ToString() ?? "";
+                lblRank.Text = row.Cells[5].Value?.ToString() ?? "(Auto Calculate)";
+                lblThreatLevel.Text = row.Cells[6].Value?.ToString() ?? "(Auto Calculate)";
+            }
+        }
     }
 }
