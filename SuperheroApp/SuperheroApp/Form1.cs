@@ -413,4 +413,17 @@ namespace SuperheroApp
             }
         }
     }
+
+    public class Hero
+    {
+        public string HeroId { get; set; }
+        public string Name { get; set; }
+        public string Age { get; set; }
+        public string Superpower { get; set; }
+        public string ExamScore { get; set; }
+        public string Rank { get; set; }
+        public string ThreatLevel { get; set; }
+    }
 }
+
+
