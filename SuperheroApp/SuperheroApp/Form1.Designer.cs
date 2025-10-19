@@ -51,6 +51,19 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.lblTotalHeroes = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.lblAvgAge = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.lblAvgScore = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.lblSRank = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.lblARank = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.lblBRank = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.lblCRank = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHeroes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -265,11 +278,149 @@
             this.lblTotalHeroes.TabIndex = 22;
             this.lblTotalHeroes.Text = "0";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(200, 590);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(72, 13);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Average Age:";
+            // 
+            // lblAvgAge
+            // 
+            this.lblAvgAge.AutoSize = true;
+            this.lblAvgAge.Location = new System.Drawing.Point(280, 590);
+            this.lblAvgAge.Name = "lblAvgAge";
+            this.lblAvgAge.Size = new System.Drawing.Size(13, 13);
+            this.lblAvgAge.TabIndex = 24;
+            this.lblAvgAge.Text = "0";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(350, 590);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(81, 13);
+            this.label12.TabIndex = 25;
+            this.label12.Text = "Average Score:";
+            // 
+            // lblAvgScore
+            // 
+            this.lblAvgScore.AutoSize = true;
+            this.lblAvgScore.Location = new System.Drawing.Point(440, 590);
+            this.lblAvgScore.Name = "lblAvgScore";
+            this.lblAvgScore.Size = new System.Drawing.Size(13, 13);
+            this.lblAvgScore.TabIndex = 26;
+            this.lblAvgScore.Text = "0";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(541, 360);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(41, 13);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "label13";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(50, 620);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(46, 13);
+            this.label14.TabIndex = 28;
+            this.label14.Text = "S-Rank:";
+            // 
+            // lblSRank
+            // 
+            this.lblSRank.AutoSize = true;
+            this.lblSRank.ForeColor = System.Drawing.Color.Red;
+            this.lblSRank.Location = new System.Drawing.Point(100, 620);
+            this.lblSRank.Name = "lblSRank";
+            this.lblSRank.Size = new System.Drawing.Size(13, 13);
+            this.lblSRank.TabIndex = 29;
+            this.lblSRank.Text = "0";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(180, 620);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(46, 13);
+            this.label15.TabIndex = 30;
+            this.label15.Text = "A-Rank:";
+            // 
+            // lblARank
+            // 
+            this.lblARank.AutoSize = true;
+            this.lblARank.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblARank.ForeColor = System.Drawing.Color.Orange;
+            this.lblARank.Location = new System.Drawing.Point(230, 620);
+            this.lblARank.Name = "lblARank";
+            this.lblARank.Size = new System.Drawing.Size(15, 15);
+            this.lblARank.TabIndex = 31;
+            this.lblARank.Text = "0";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(260, 620);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(46, 13);
+            this.label16.TabIndex = 32;
+            this.label16.Text = "B-Rank:";
+            // 
+            // lblBRank
+            // 
+            this.lblBRank.AutoSize = true;
+            this.lblBRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBRank.ForeColor = System.Drawing.Color.Green;
+            this.lblBRank.Location = new System.Drawing.Point(312, 620);
+            this.lblBRank.Name = "lblBRank";
+            this.lblBRank.Size = new System.Drawing.Size(15, 15);
+            this.lblBRank.TabIndex = 33;
+            this.lblBRank.Text = "0";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(340, 620);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(46, 13);
+            this.label17.TabIndex = 34;
+            this.label17.Text = "C-Rank:";
+            // 
+            // lblCRank
+            // 
+            this.lblCRank.AutoSize = true;
+            this.lblCRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCRank.ForeColor = System.Drawing.Color.Blue;
+            this.lblCRank.Location = new System.Drawing.Point(390, 620);
+            this.lblCRank.Name = "lblCRank";
+            this.lblCRank.Size = new System.Drawing.Size(15, 15);
+            this.lblCRank.TabIndex = 35;
+            this.lblCRank.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 661);
+            this.Controls.Add(this.lblCRank);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.lblBRank);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.lblARank);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.lblSRank);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.lblAvgScore);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.lblAvgAge);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.lblTotalHeroes);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -327,6 +478,19 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblTotalHeroes;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblAvgAge;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblAvgScore;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblSRank;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblARank;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblBRank;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lblCRank;
     }
 }
 
