@@ -15,6 +15,8 @@ namespace SuperheroApp
         public Form1()
         {
             InitializeComponent();
+            ClearForm();
+            RefreshSuperheroList();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -155,6 +157,96 @@ namespace SuperheroApp
             catch (Exception ex)
             {
                 MessageBox.Show($"Error loading heroes: {ex.Message}", "Error",
+                               MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            // Check if a hero is selected in the grid
+            if (dataGridViewHeroes.CurrentRow == null)
+            {
+                MessageBox.Show("Please select a hero to update from the list!", "No Selection",
+                               MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Validate inputs
+            if (string.IsNullOrWhiteSpace(txtHeroId.Text) ||
+                string.IsNullOrWhiteSpace(txtName.Text) ||
+                string.IsNullOrWhiteSpace(txtAge.Text) ||
+                string.IsNullOrWhiteSpace(txtSuperpower.Text) ||
+                string.IsNullOrWhiteSpace(txtExamScore.Text))
+            {
+                MessageBox.Show("Please fill in all fields!", "Missing Information",
+                               MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!int.TryParse(txtAge.Text, out int age) || !int.TryParse(txtExamScore.Text, out int examScore))
+            {
+                MessageBox.Show("Please enter valid numbers for Age and Exam Score!", "Invalid Numbers",
+                               MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (examScore < 0 || examScore > 100)
+            {
+                MessageBox.Show("Exam Score must be between 0 and 100!", "Invalid Score",
+                               MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Calculate new rank and threat
+            string rank = "";
+            string threatLevel = "";
+
+            if (examScore >= 81 && examScore <= 100)
+            {
+                rank = "S-Rank";
+                threatLevel = "Finals Week";
+            }
+            else if (examScore >= 61 && examScore <= 80)
+            {
+                rank = "A-Rank";
+                threatLevel = "Midterm Madness";
+            }
+            else if (examScore >= 41 && examScore <= 60)
+            {
+                rank = "B-Rank";
+                threatLevel = "Group Project Gone Wrong";
+            }
+            else
+            {
+                rank = "C-Rank";
+                threatLevel = "Pop Quiz";
+            }
+
+            
+            lblRank.Text = rank;
+            lblThreatLevel.Text = threatLevel;
+
+            // Update the data in file
+            try
+            {
+                string[] allHeroes = System.IO.File.ReadAllLines("superheroes.txt");
+                int selectedIndex = dataGridViewHeroes.CurrentRow.Index;
+
+                
+                string updatedHero = $"{txtHeroId.Text},{txtName.Text},{age},{txtSuperpower.Text},{examScore},{rank},{threatLevel}";
+                allHeroes[selectedIndex] = updatedHero;
+
+                
+                System.IO.File.WriteAllLines("superheroes.txt", allHeroes);
+
+                MessageBox.Show("Superhero updated successfully!", "Success",
+                               MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                RefreshSuperheroList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error updating superhero: {ex.Message}", "Error",
                                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
