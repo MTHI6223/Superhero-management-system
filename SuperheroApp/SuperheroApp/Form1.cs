@@ -250,5 +250,52 @@ namespace SuperheroApp
                                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewHeroes.CurrentRow == null)
+            {
+                MessageBox.Show("Please select a hero to delete from the list!", "No Selection",
+                               MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Confirm deletion
+            DialogResult result = MessageBox.Show("Are you sure you want to delete this superhero?",
+                                                "Confirm Delete",
+                                                MessageBoxButtons.YesNo,
+                                                MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    string[] allHeroes = System.IO.File.ReadAllLines("superheroes.txt");
+                    int selectedIndex = dataGridViewHeroes.CurrentRow.Index;
+
+                    // Create new list without the deleted hero
+                    List<string> updatedHeroes = new List<string>();
+                    for (int i = 0; i < allHeroes.Length; i++)
+                    {
+                        if (i != selectedIndex)
+                            updatedHeroes.Add(allHeroes[i]);
+                    }
+
+                   
+                    System.IO.File.WriteAllLines("superheroes.txt", updatedHeroes);
+
+                    MessageBox.Show("Superhero deleted successfully!", "Success",
+                                   MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    ClearForm();
+                    RefreshSuperheroList();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error deleting superhero: {ex.Message}", "Error",
+                                   MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

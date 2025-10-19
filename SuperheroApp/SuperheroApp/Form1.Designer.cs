@@ -230,6 +230,7 @@
             this.btnDelete.TabIndex = 17;
             this.btnDelete.Text = "Delete Hero";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnReport
             // 
