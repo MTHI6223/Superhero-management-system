@@ -48,6 +48,13 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
             this.dataGridViewHeroes = new System.Windows.Forms.DataGridView();
+            this.colHeroId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAge = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSuperpower = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colExamScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colRank = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colThreatLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.lblTotalHeroes = new System.Windows.Forms.Label();
@@ -55,7 +62,6 @@
             this.lblAvgAge = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.lblAvgScore = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.lblSRank = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -64,13 +70,6 @@
             this.lblBRank = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.lblCRank = new System.Windows.Forms.Label();
-            this.colHeroId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colAge = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSuperpower = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colExamScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colRank = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colThreatLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHeroes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -269,6 +268,41 @@
             this.dataGridViewHeroes.Size = new System.Drawing.Size(800, 300);
             this.dataGridViewHeroes.TabIndex = 19;
             // 
+            // colHeroId
+            // 
+            this.colHeroId.HeaderText = "Hero ID";
+            this.colHeroId.Name = "colHeroId";
+            // 
+            // colName
+            // 
+            this.colName.HeaderText = "Name";
+            this.colName.Name = "colName";
+            // 
+            // colAge
+            // 
+            this.colAge.HeaderText = "Age";
+            this.colAge.Name = "colAge";
+            // 
+            // colSuperpower
+            // 
+            this.colSuperpower.HeaderText = "Superpower";
+            this.colSuperpower.Name = "colSuperpower";
+            // 
+            // colExamScore
+            // 
+            this.colExamScore.HeaderText = "Exam Score";
+            this.colExamScore.Name = "colExamScore";
+            // 
+            // colRank
+            // 
+            this.colRank.HeaderText = "Rank";
+            this.colRank.Name = "colRank";
+            // 
+            // colThreatLevel
+            // 
+            this.colThreatLevel.HeaderText = "Threat Level";
+            this.colThreatLevel.Name = "colThreatLevel";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -332,15 +366,6 @@
             this.lblAvgScore.Size = new System.Drawing.Size(13, 13);
             this.lblAvgScore.TabIndex = 26;
             this.lblAvgScore.Text = "0";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(541, 360);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 13);
-            this.label13.TabIndex = 27;
-            this.label13.Text = "label13";
             // 
             // label14
             // 
@@ -422,41 +447,6 @@
             this.lblCRank.TabIndex = 35;
             this.lblCRank.Text = "0";
             // 
-            // colHeroId
-            // 
-            this.colHeroId.HeaderText = "Hero ID";
-            this.colHeroId.Name = "colHeroId";
-            // 
-            // colName
-            // 
-            this.colName.HeaderText = "Name";
-            this.colName.Name = "colName";
-            // 
-            // colAge
-            // 
-            this.colAge.HeaderText = "Age";
-            this.colAge.Name = "colAge";
-            // 
-            // colSuperpower
-            // 
-            this.colSuperpower.HeaderText = "Superpower";
-            this.colSuperpower.Name = "colSuperpower";
-            // 
-            // colExamScore
-            // 
-            this.colExamScore.HeaderText = "Exam Score";
-            this.colExamScore.Name = "colExamScore";
-            // 
-            // colRank
-            // 
-            this.colRank.HeaderText = "Rank";
-            this.colRank.Name = "colRank";
-            // 
-            // colThreatLevel
-            // 
-            this.colThreatLevel.HeaderText = "Threat Level";
-            this.colThreatLevel.Name = "colThreatLevel";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -470,7 +460,6 @@
             this.Controls.Add(this.label15);
             this.Controls.Add(this.lblSRank);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.lblAvgScore);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.lblAvgAge);
@@ -536,7 +525,6 @@
         private System.Windows.Forms.Label lblAvgAge;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label lblAvgScore;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label lblSRank;
         private System.Windows.Forms.Label label15;
