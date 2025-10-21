@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3EAB7B27-5458-4B0B-B82A-6346F9E79375}|PRG2782 Project\\PRG2782 Project.csproj|c:\\users\\mapula\\downloads\\prg2782 project\\prg2782 project\\presentationlayer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EAB7B27-5458-4B0B-B82A-6346F9E79375}|PRG2782 Project\\PRG2782 Project.csproj|solutionrelative:prg2782 project\\presentationlayer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EAB7B27-5458-4B0B-B82A-6346F9E79375}|PRG2782 Project\\PRG2782 Project.csproj|C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\prg2782 project\\datalayer\\filehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EAB7B27-5458-4B0B-B82A-6346F9E79375}|PRG2782 Project\\PRG2782 Project.csproj|solutionrelative:prg2782 project\\datalayer\\filehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EAB7B27-5458-4B0B-B82A-6346F9E79375}|PRG2782 Project\\PRG2782 Project.csproj|C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\BusinessLogicLayer\\DataHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EAB7B27-5458-4B0B-B82A-6346F9E79375}|PRG2782 Project\\PRG2782 Project.csproj|solutionrelative:PRG2782 Project\\BusinessLogicLayer\\DataHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EAB7B27-5458-4B0B-B82A-6346F9E79375}|PRG2782 Project\\PRG2782 Project.csproj|C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\Superheroes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EAB7B27-5458-4B0B-B82A-6346F9E79375}|PRG2782 Project\\PRG2782 Project.csproj|solutionrelative:PRG2782 Project\\Superheroes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EAB7B27-5458-4B0B-B82A-6346F9E79375}|PRG2782 Project\\PRG2782 Project.csproj|C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\Superheroes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3EAB7B27-5458-4B0B-B82A-6346F9E79375}|PRG2782 Project\\PRG2782 Project.csproj|solutionrelative:PRG2782 Project\\Superheroes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EAB7B27-5458-4B0B-B82A-6346F9E79375}|PRG2782 Project\\PRG2782 Project.csproj|C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\Summary.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3EAB7B27-5458-4B0B-B82A-6346F9E79375}|PRG2782 Project\\PRG2782 Project.csproj|solutionrelative:PRG2782 Project\\Summary.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EAB7B27-5458-4B0B-B82A-6346F9E79375}|PRG2782 Project\\PRG2782 Project.csproj|C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\prg2782 project\\presentationlayer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3EAB7B27-5458-4B0B-B82A-6346F9E79375}|PRG2782 Project\\PRG2782 Project.csproj|solutionrelative:prg2782 project\\presentationlayer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\PresentationLayer\\Form1.cs",
+              "RelativeDocumentMoniker": "PRG2782 Project\\PresentationLayer\\Form1.cs",
+              "ToolTip": "C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\PresentationLayer\\Form1.cs",
+              "RelativeToolTip": "PRG2782 Project\\PresentationLayer\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T19:54:56.385Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\PresentationLayer\\Form1.cs",
+              "RelativeDocumentMoniker": "PRG2782 Project\\PresentationLayer\\Form1.cs",
+              "ToolTip": "C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\PresentationLayer\\Form1.cs [Design]",
+              "RelativeToolTip": "PRG2782 Project\\PresentationLayer\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T16:48:25.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Summary.txt",
+              "DocumentMoniker": "C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\Summary.txt",
+              "RelativeDocumentMoniker": "PRG2782 Project\\Summary.txt",
+              "ToolTip": "C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\Summary.txt",
+              "RelativeToolTip": "PRG2782 Project\\Summary.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-20T07:05:29.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\DataLayer\\FileHandler.cs",
+              "RelativeDocumentMoniker": "PRG2782 Project\\DataLayer\\FileHandler.cs",
+              "ToolTip": "C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\DataLayer\\FileHandler.cs",
+              "RelativeToolTip": "PRG2782 Project\\DataLayer\\FileHandler.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAIwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T19:50:43.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Superheroes.cs",
+              "DocumentMoniker": "C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\Superheroes.cs",
+              "RelativeDocumentMoniker": "PRG2782 Project\\Superheroes.cs",
+              "ToolTip": "C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\Superheroes.cs",
+              "RelativeToolTip": "PRG2782 Project\\Superheroes.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAcwC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T19:52:54.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Superheroes.txt",
+              "DocumentMoniker": "C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\Superheroes.txt",
+              "RelativeDocumentMoniker": "PRG2782 Project\\Superheroes.txt",
+              "ToolTip": "C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\Superheroes.txt",
+              "RelativeToolTip": "PRG2782 Project\\Superheroes.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-18T19:52:00.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\BusinessLogicLayer\\DataHandler.cs",
+              "RelativeDocumentMoniker": "PRG2782 Project\\BusinessLogicLayer\\DataHandler.cs",
+              "ToolTip": "C:\\Users\\Mapula\\Downloads\\PRG2782 Project\\PRG2782 Project\\BusinessLogicLayer\\DataHandler.cs",
+              "RelativeToolTip": "PRG2782 Project\\BusinessLogicLayer\\DataHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T19:49:31.127Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

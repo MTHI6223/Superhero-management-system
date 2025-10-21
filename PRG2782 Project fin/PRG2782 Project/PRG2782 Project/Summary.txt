@@ -1,0 +1,9 @@
+Superheroes Summary Report
+ --------------------------
+Total Heroes: 1
+Average Age: 45,00
+Average Exam Score: 78,00
+S-Rank: 0
+A-Rank: 1
+B-Rank: 0
+C-Rank: 0

@@ -1,0 +1,1 @@
+Hero ID: 1 |Age: 45 |Name: nathi |Superpower: run |Hero Exam Score: 78 |Rank: A-Rank |Threat Level: Midterm Madness
