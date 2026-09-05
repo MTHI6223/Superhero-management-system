@@ -70,6 +70,14 @@ The application follows a three-layer architecture pattern:
 
 ## Technical Implementation
 
+### User Interface
+The application features a comic-book themed Windows Forms interface:
+- Comic-red header banner with gold "SUPERHERO HQ" title and lightning-bolt burst
+- Bold comic buttons (Add / Update / Delete / Report) with chunky black borders and hover states
+- Style-consistent color palette defined centrally in **UITheme.cs**
+- DataGridView with comic-red headers, gold row selection, and rank cells colored by tier
+- Double-buffered rendering to eliminate flicker
+
 ### Validation Rules
 - All fields must be filled
 - Age must be a valid number
@@ -127,11 +135,10 @@ dotnet run --project SuperheroApp
 
 ## Git History
 
-The project includes comprehensive Git history with meaningful commits:
-- Initial commit with layered architecture
-- Feature commits for each major functionality
-- Incremental development process
-- Clear commit messages describing changes
+This repository is tracked with its own clean Git history on GitHub (`MTHI6223/Superhero-management-system`). Each feature should be recorded with a clear, meaningful commit message. Current commit history:
+
+- `e7dca7f` - Initial commit with layered architecture
+- `[next]`   - Comic-book themed user interface (in progress)
 
 ## Requirements Compliance
 
@@ -168,7 +175,7 @@ This project fulfills all requirements from the Programming 2782 rubric:
 ✅ Git repository initialized  
 ✅ Meaningful commit messages for each feature  
 ✅ Clear commit history with incremental development  
-✅ GitHub integration ready  
+✅ GitHub integration ready (origin: MTHI6223/Superhero-management-system)  
 
 ## Author
 

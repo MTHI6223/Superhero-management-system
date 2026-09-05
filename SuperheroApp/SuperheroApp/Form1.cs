@@ -17,11 +17,20 @@ namespace SuperheroApp
     /// </summary>
     public partial class Form1 : Form
     {
+        private static readonly Font GridBoldFont = new Font("Segoe UI", 9F, FontStyle.Bold);
+
         private SuperheroBusinessLogic _businessLogic;
 
         public Form1()
         {
             InitializeComponent();
+
+            // Reduce flicker while drawing the comic-style UI
+            SetStyle(ControlStyles.AllPaintingInWmPaint |
+                     ControlStyles.OptimizedDoubleBuffer |
+                     ControlStyles.ResizeRedraw, true);
+            UpdateStyles();
+
             _businessLogic = new SuperheroBusinessLogic();
             ClearForm();
             RefreshSuperheroList();
@@ -299,6 +308,74 @@ namespace SuperheroApp
                 txtExamScore.Text = row.Cells["colExamScore"].Value?.ToString() ?? "";
                 lblRank.Text = row.Cells["colRank"].Value?.ToString() ?? "(Auto Calculate)";
                 lblThreatLevel.Text = row.Cells["colThreatLevel"].Value?.ToString() ?? "(Auto Calculate)";
+            }
+        }
+
+        /// <summary>
+        /// Colors each rank cell with its comic-book badge color
+        /// </summary>
+        private void dataGridViewHeroes_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.ColumnIndex != colRank.Index)
+                return;
+
+            switch (e.Value as string)
+            {
+                case "S-Rank":
+                    e.CellStyle.BackColor = UITheme.Red;
+                    e.CellStyle.ForeColor = Color.White;
+                    e.CellStyle.Font = GridBoldFont;
+                    break;
+                case "A-Rank":
+                    e.CellStyle.BackColor = UITheme.Orange;
+                    e.CellStyle.ForeColor = Color.White;
+                    e.CellStyle.Font = GridBoldFont;
+                    break;
+                case "B-Rank":
+                    e.CellStyle.BackColor = UITheme.Green;
+                    e.CellStyle.ForeColor = Color.White;
+                    e.CellStyle.Font = GridBoldFont;
+                    break;
+                case "C-Rank":
+                    e.CellStyle.BackColor = UITheme.Blue;
+                    e.CellStyle.ForeColor = Color.White;
+                    e.CellStyle.Font = GridBoldFont;
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// Draws the gold comic "POW" burst with a lightning bolt in the header
+        /// </summary>
+        private void pnlBurst_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+            Rectangle burstRing = pnlBurst.ClientRectangle;
+            burstRing.Inflate(-6, -6);
+
+            using (SolidBrush goldBrush = new SolidBrush(UITheme.Gold))
+            using (Pen inkPen = new Pen(UITheme.Ink, 3F))
+            {
+                e.Graphics.FillEllipse(goldBrush, burstRing);
+                e.Graphics.DrawEllipse(inkPen, burstRing);
+            }
+
+            // Lightning bolt polygon, roughly centered on the gold burst
+            Point[] bolt = new Point[]
+            {
+                new Point(45, 4),
+                new Point(18, 38),
+                new Point(34, 38),
+                new Point(28, 70),
+                new Point(58, 33),
+                new Point(42, 33),
+                new Point(56, 4)
+            };
+
+            using (SolidBrush inkBrush = new SolidBrush(UITheme.Ink))
+            {
+                e.Graphics.FillPolygon(inkBrush, bolt);
             }
         }
     }

@@ -1,0 +1,10 @@
+SUPERHERO SUMMARY REPORT
+Generated on: 2026/09/06 00:13:14
+Total Heroes: 1
+Average Age: 25,00
+Average Exam Score: 56,00
+Rank Distribution:
+  S-Rank: 0 heroes
+  A-Rank: 0 heroes
+  B-Rank: 1 heroes
+  C-Rank: 0 heroes
